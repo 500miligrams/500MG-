@@ -146,3 +146,9 @@ html, body {
 * {
     max-width: 100%;
 }
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 62.5%; /* 1rem = 10px au lieu de 16px, donc tout ce qui est en rem rétrécit automatiquement de 37.5% */
+    }
+}
