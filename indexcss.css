@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Press+Start+2P&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', cursive;
+}
+
+.video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+    filter: blur(5px);
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: rgb(6, 7, 7);
+    font-size: 25rem;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+
+.dark-section {
+    min-height: 100vh;
+    background-color: #1a1a1a;
+}
+
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 100px;
+    right: 40px;
+    color: white;
+    font-size: 5rem;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+    z-index: 1;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 15px);
+    }
+}
+
+.discord-tag {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 5rem;
+}
+.discord-icon {
+    width: 1em;
+    height: 1em;
+}
+
+.telegram-tag {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 5rem;
+}
+
+.telegram-icon {
+    width: 1em;
+    height: 1em;
+}
+
+
+.dark-section {
+    text-align: center;
+    min-height: -150vh;
+    background-color: #1a1a1a;
+    color: white;
+    padding-top: 0;
+    margin-top: -200px;
+    /* fait remonter toute la section */
+}
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+    color: white;
+    font-size: 5rem;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+    z-index: 1;
+}
+
