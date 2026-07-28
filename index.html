@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,13 +21,9 @@
     </section>
 
     <section id="next-section" class="dark-section">
-     
 
-        <a href="#next-section" class="scroll-arrow">↓</a>
     </section>
 
-    <h1 data-text="500mg">500mg</h1>
-    
     <div class="discord-tag">
         <img src="icon1.png" alt="Discord" class="discord-icon">
         <span>psychaestenique</span>
@@ -37,40 +34,25 @@
         <span>vxwz5</span>
     </div>
 
+    <audio id="bg-music" loop muted>
+        <source src="musique1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const music = document.getElementById('bg-music');
+
+        function unmuteMusic() {
+            music.muted = false;
+            music.volume = 1;
+            music.play();
+            window.removeEventListener('click', unmuteMusic);
+            window.removeEventListener('keydown', unmuteMusic);
+        }
+
+        window.addEventListener('click', unmuteMusic, { once: true });
+        window.addEventListener('keydown', unmuteMusic, { once: true });
+    </script>
+
 </body>
 
 </html>
-
-<audio id="bg-music" autoplay loop muted>
-    <source src="musique1.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-    const music = document.getElementById('bg-music');
-
-    function unmuteMusic() {
-        music.muted = false;
-        music.volume = 1;
-        music.play();
-        window.removeEventListener('click', unmuteMusic);
-        window.removeEventListener('keydown', unmuteMusic);
-    }
-
-    window.addEventListener('click', unmuteMusic, { once: true });
-    window.addEventListener('keydown', unmuteMusic, { once: true });
-</script>
-
-
-
-
-
-
-
-<section id="next-section" class="dark-section">
-
-    <h2>Service & Prix</h2>
-    <p>📩 onrigolebien@atomicmail.io 📩</p>
-
-    <a href="#next-section" class="scroll-arrow">↓</a>
-
-</section>
